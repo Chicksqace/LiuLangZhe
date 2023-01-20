@@ -1,0 +1,209 @@
+/*轮播图样式*/
+banner{                    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.banner0{
+    width: 100%;
+}
+
+ul.slides{
+    width: 1266px;
+    height: 844px;
+    position: relative;
+    list-style: none;
+    background-color: #eee;
+    overflow: hidden;
+}
+li.slide{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s transform ease-in-out;
+    padding-bottom: 75%;
+    background-size: contain;
+}
+li.slide:nth-of-type(1){
+    background-image: url(../img/banner1.jpg);
+    left: 0%;
+}
+li.slide:nth-of-type(2){
+    background-image: url(../img/banner2.jpg);
+    left: 100%;
+}
+li.slide:nth-of-type(3){
+    background-image: url(../img/banner3.jpg);
+    left: 200%;
+}
+
+li.slide span{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    font-family: "黑体";
+    font-weight: bold;
+}
+
+li.slide a{
+    display: block;
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    transition: all ease-in-out 0.5s;
+}
+
+li.slide a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+li.slide:nth-of-type(1) a{
+    top: 380px;
+    left: 100px;
+}
+
+li.slide:nth-of-type(1) span{
+    top: 300px;
+    left: 100px;
+}
+
+li.slide:nth-of-type(2) a{
+    top: 500px;
+    left: 200px;
+}
+
+li.slide:nth-of-type(2) span{
+    top: 400px;
+    left: 200px;
+}
+
+li.slide:nth-of-type(3) a{
+    top: 220px;
+    left: 610px;
+}
+
+li.slide:nth-of-type(3) span{
+    top: 150px;
+    left: auto;
+}
+
+.slides input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+.controls-visible label{
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 3px;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~
+.controls-visible label:nth-of-type(1){
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~
+.controls-visible label:nth-of-type(2){
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~
+.controls-visible label:nth-of-type(3){
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~
+.slide{
+    transform: translatex(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~
+.slide{
+    transform: translatex(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~
+.slide{
+    transform: translatex(-200%);
+}
+
+/* 主体内容的样式 */
+.content{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/*介绍样式*/
+#introduce{                     
+    width: 100%;
+    height: 400px;
+    margin: 50px auto 150px;
+    position: relative;
+}
+
+#introduce div{
+    background: linear-gradient(to bottom, #E6E6FA, #87CEFA);
+    width: 380px;
+    height: inherit;
+    float: left;
+    margin-right:30px;
+    padding: 60px 35px;
+    box-sizing: border-box;
+}
+
+#introduce div:last-child{
+    float: right;
+    margin-right: 0px;
+}
+
+#introduce div span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color:#fff;
+    text-align: center;
+    line-height: 60px;
+    font-family: "黑体";
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #87CEFA;
+}
+
+#introduce div h2{
+    margin: 10px 0px;
+}
+
+#introduce div p{
+    text-indent: 2em;
+    color: #666;
+    line-height: 30px;
+	font-family: "楷体";
+}

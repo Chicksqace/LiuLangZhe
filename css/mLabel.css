@@ -1,0 +1,13 @@
+/* 成为旅人样式 */
+#cwlr{
+    width: 1200px;
+	height: 500px;
+    background-color: #fff;   
+    margin: 0px auto 100px;
+    padding-top: 100px;
+	
+}
+
+#cwlr div:last-of-type{
+    clear: both;
+}

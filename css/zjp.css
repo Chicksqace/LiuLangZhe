@@ -1,0 +1,94 @@
+/* 足迹篇样式 */
+#zjp{
+    width: 100%;
+    height: 700px;
+    padding-top: 60px;
+    background: #f9f9f9;
+    /* overflow: hidden; */
+}
+
+#_outerDiv{
+    position:relative;
+}
+
+#zjp h2{
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#zjp>span{
+    display: block;
+    width: 100%;
+    color: #666;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#zjp>div{
+    width: 1200px;
+    height: 420px;
+    overflow: hidden;
+    margin: 50px auto 0px;
+}
+
+#zjp ul{
+    width: 2400px;
+    height: 420px;
+    overflow: hidden;
+    cursor: e-resize;
+}
+
+#zjp ul li{
+    width: 380px;
+    height: 420px;
+    margin-right: 20px;
+    background-color: #fff;
+    float: left;
+}
+
+#zjp ul li:last-of-type{
+    margin-right: 0px;
+}
+
+.zjp_p{                        /* 足迹篇图片 */
+    width: 340px;
+    height: 273px;
+    margin: 20px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+li:nth-of-type(1) .zjp_p{
+    background-image: url(../img/兵马俑.jpg);
+    background-position-y:bottom;
+}
+
+li:nth-of-type(2) .zjp_p{
+    background-image: url(../img/丽江.jpg);
+    background-position-y:bottom;
+}
+
+li:nth-of-type(3) .zjp_p{
+    background-image: url(../img/上海.jpg);
+    background-position-y:center;
+}
+
+li:nth-of-type(4) .zjp_p{
+    background-image: url(../img/南京.jpg);
+}
+li:nth-of-type(5) .zjp_p{
+    background-image: url(../img/济南.jpg);
+}
+
+.zjp_p~div{
+    color: #333;
+    padding: 20px;
+}
+
+.zjp_p~div span{
+    font-size: 20px;
+    font-weight: bold;
+}

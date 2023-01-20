@@ -1,0 +1,141 @@
+/* 成为旅人样式 */
+#cwlr{
+    width: 1200px;
+    background-color: #fff;   
+    margin: 0px auto 100px;
+    padding-top: 100px;
+}
+
+#cwlr div:last-of-type{
+    clear: both;
+}
+
+    /* 成为旅人左侧 */
+.cwlr_left{
+    float: left;
+    width: 700px;
+    height: 500px;
+}
+
+.cwlr_left span{
+    font-size: 30px;
+    line-height: 60px;
+    padding: 10px 0px;
+    font-weight: bolder;
+}
+
+.cwlr_left ul{
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.cwlr_left ul li{
+    padding-left: 100px;
+}
+
+.cwlr_left ul li:nth-of-type(1){
+    background: url(../img/icon/游记.png) no-repeat 15px 0px;
+    background-size: 80px 80px;
+}
+
+.cwlr_left ul li:nth-of-type(2){
+    background: url(../img/icon/美食.png) no-repeat 15px 0px;
+    background-size: 70px 70px;
+}
+
+.cwlr_left ul li:nth-of-type(3){
+    background: url(../img/icon/足迹.png) no-repeat 15px 0px;
+    background-size: 70px 70px;
+}
+
+.cwlr_left ul li p{
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 40px;
+    line-height: 25px;
+}
+    /* 成为旅人右侧 */
+.cwlr_right{
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: #333;    
+    border-radius: 50%;
+    margin-top: -30px;
+}
+
+.cwlr_right span{
+    display: block;
+    color: #fff;
+    margin: 90px auto 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cwlr_right div{
+    width: 320px;
+    margin: 20px auto 10px;
+    padding-left: 10px;
+    color: #999;
+    text-align: left;
+    border-bottom: 1px solid #999;
+}
+
+.cwlr_right input{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    height: 30px;
+    color: #999;
+    vertical-align: middle;
+    margin-left: 15px;
+    padding-left: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+
+.cwlr_right input:hover{
+    background-color: rgba(99, 99, 99, 1);
+    color: #fff;
+}
+
+.cwlr_right input[type="radio"]{
+    display: none;
+}
+
+.cwlr_right label{
+    width: 35px;
+    height: 35px;
+    padding-left: 50px;
+}
+
+.cwlr_right img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.cwlr_right img:hover{
+    background-color: rgba(99, 99, 99, 1);
+}
+
+
+.cwlr_right input[type="submit"]{
+    width: 155px; 
+    height: 55px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 28px;
+    margin-top: 40px;
+    margin-left: 170px;
+    transition: 0.5s; 
+}
+.cwlr_right input[type="submit"]:hover{
+    background-color:rgba(0 , 0 , 0 , 0);
+    color: white;
+    /* transition-timing-function: ease-in-out ; */
+}
+

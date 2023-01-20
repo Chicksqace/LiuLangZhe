@@ -1,0 +1,157 @@
+/* 美食篇样式 */
+#msp{
+    width: 100%;
+    height: 1000px;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+#_outerDiv{
+    position:relative;
+}
+
+#msp h2{
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#msp>span{
+    display: block;
+    width: 100%;
+    color: #666;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+
+/*改过*/
+#msp>div{
+    
+    width: 1250px;
+    height: 850px;
+    overflow: hidden;
+    margin: 0px auto;
+    /* position: relative; */
+}
+
+
+
+
+#box{
+    position: relative;
+}
+
+#msp ul{
+    width: 3240px;
+    height: 750px;
+    margin: 50px auto;
+    cursor: e-resize ;
+    /* position: absolute; */
+}
+
+#msp ul li{
+    width: 385px;
+    height: 750px;
+    float: left;
+    background-color: #f9f9f9;
+    margin-right: 20px;
+}
+
+.msp_p{
+    width: 100%;
+    height: 575px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+li:nth-of-type(1) .msp_p{
+    background-image: url(../img/拉面.jpg);
+}
+
+li:nth-of-type(2) .msp_p{
+    background-image: url(../img/烧烤.jpg);
+}
+
+li:nth-of-type(3) .msp_p{
+    background-image: url(../img/水果沙拉.jpg);
+}
+
+li:nth-of-type(4) .msp_p{
+    background-image: url(../img/野餐.jpg);
+}
+
+li:nth-of-type(5) .msp_p{
+    background-image: url(../img/面包.jpg);
+}
+
+li:nth-of-type(6) .msp_p{
+    background-image: url(../img/冰激凌.jpg);
+}
+
+li:nth-of-type(7) .msp_p{
+    background-image: url(../img/咖啡.jpg);
+}
+
+li:nth-of-type(8) .msp_p{
+    background-image: url(../img/肉丸.jpg);
+    background-position-x: left;
+}
+
+.msp_p~div{
+    width: 335px;
+    padding: 25px;
+    color: #666;
+    margin: 0px auto;
+    line-height: 40px;
+}
+
+.msp_p~div span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*点击换内容*/
+#_outerDiv a {
+    position: absolute;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
+    
+}
+#_outerDiv a:nth-child(1){
+    /* display: flex; */
+    background-color: #000;
+    top: 250px;
+    left:50px;
+}
+#_outerDiv a:nth-child(2){
+    /* display: flex; */
+    top: 250px;
+    right: 5px;
+}
+
+#_outerDiv a:hover {
+    opacity: 0.4;
+}
+#prev img{
+    width: 8vw;
+}
+#next img{
+    width: 8vw;
+}
+
+
+
+
+#_imageDiv{
+	z-index:0; 
+	top:0px; 
+	left:0px;
+	width:3340px;
+	height:850px;
+}
