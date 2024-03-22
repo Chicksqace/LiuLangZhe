@@ -1,4 +1,4 @@
-// 褚立邦做
+
 function runWeb(){  
     location='index.html';  
   }  
