@@ -1,4 +1,4 @@
-// 褚立邦做
+
 window.onload=function(){
     var number=true;
             var stop=document.getElementById("stop");
