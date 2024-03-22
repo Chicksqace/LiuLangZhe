@@ -1,4 +1,4 @@
-// 褚立邦做
+
 window.onload=function(){
 			var oDiv=document.getElementById("_imageDiv")
 			var oUl=oDiv.getElementsByTagName("ul")[0];
