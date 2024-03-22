@@ -1,4 +1,4 @@
-// 陈攀宇做
+
 $(function() {
 	$("#list input").focus("click",function(){
 		$(this).val("")
