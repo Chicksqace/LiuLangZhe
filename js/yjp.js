@@ -1,4 +1,4 @@
-// 褚立邦做
+
 $(function(){
 	$("#yjp ul li div .yjp_p").on("mouseenter",function(){
 		// this.children[0].style.display="block";
