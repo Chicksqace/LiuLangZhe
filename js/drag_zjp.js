@@ -1,4 +1,4 @@
-// 陈攀宇做
+
 function getElem (id) {
   return document.getElementById(id);
 }
